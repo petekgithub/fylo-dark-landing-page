@@ -1,0 +1,54 @@
+/*- Dark Blue (intro and email sign up background): hsl(217, 28%, 15%)
+- Dark Blue (main background): hsl(218, 28%, 13%)
+- Dark Blue (footer background): hsl(216, 53%, 9%)
+- Dark Blue (testimonials background): hsl(219, 30%, 18%)
+
+- Cyan (inside call-to-action gradient): hsl(176, 68%, 64%)
+- Blue (inside call-to-action gradient): hsl(198, 60%, 50%)
+- Light Red (error): hsl(0, 100%, 63%)
+
+- White: hsl(0, 0%, 100%)
+*/
+
+:root {
+  --dark-blue: hsl(218, 28%, 13%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  color: var(--white);
+  background-color: var(--dark-blue);
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+nav {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  width: 94%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+header {
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  gap: 36px;
+}
