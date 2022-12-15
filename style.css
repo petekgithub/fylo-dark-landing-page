@@ -13,6 +13,8 @@
 :root {
   --dark-blue: hsl(218, 28%, 13%);
   --white: hsl(0, 0%, 100%);
+  --blue: hsl(198, 60%, 50%);
+  --cyan: hsl(176, 68%, 64%);
 }
 
 body {
@@ -20,6 +22,7 @@ body {
   background-color: var(--dark-blue);
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
 }
 
 h1,
@@ -40,6 +43,13 @@ nav {
   margin-right: auto;
 }
 
+.primary-button {
+  background: linear-gradient(to right, var(--blue), var(--cyan));
+  padding: 12px 48px;
+  border-radius: 9999px;
+  color: var(--white);
+}
+
 /* Header */
 header {
   height: 128px;
@@ -51,4 +61,29 @@ header {
 nav {
   display: flex;
   gap: 36px;
+}
+
+/* Hero */
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  max-width: 75ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hero .hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+#hero h1 {
+  font-size: 36px;
+  margin-top: 24px;
+}
+
+#hero p {
 }
