@@ -63,7 +63,7 @@ nav {
   gap: 36px;
 }
 
-/* Hero */
+/* Hero section */
 #hero {
   display: flex;
   flex-direction: column;
@@ -86,4 +86,35 @@ nav {
 }
 
 #hero p {
+}
+
+/* Faetures section*/
+
+#features {
+  margin-top: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+#features .feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(50% - 12px);
+  min-width: 310px;
+}
+
+#features .feature-card h3 {
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+#features .feature-card p {
+  opacity: 0.5;
 }
