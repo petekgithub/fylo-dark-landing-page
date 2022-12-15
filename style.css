@@ -11,6 +11,7 @@
 */
 
 :root {
+  --darkest-blue: hsl(219, 30%, 18%);
   --dark-blue: hsl(218, 28%, 13%);
   --white: hsl(0, 0%, 100%);
   --blue: hsl(198, 60%, 50%);
@@ -147,4 +148,40 @@ nav {
   gap: 4px;
   color: var(--cyan);
   text-decoration: underline;
+}
+
+/* testimonials */
+
+#testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+#testimonials .testimonial-card {
+  padding: 24px;
+  background-color: var(--darkest-blue);
+}
+
+#testimonials .testimonial-card p {
+  margin-bottom: 12px;
+}
+
+#testimonials .testimonial-card .testimonial-wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+#testimonials .testimonial-card .testimonial-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+#testimonials .testimonial-card h6 {
+  font-size: 12px;
+  opacity: 0.75;
+  margin-top: 4px;
 }
